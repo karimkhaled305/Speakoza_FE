@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Audio - Speakoza</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+ 
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../project/index.html">
+                    <img src="../assets/logo.webp" alt="Speakoza Logo">
+                </a>
+            </div>
+            <div class="welcome-message" id="welcome-message"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="premium.html">Premium</a></li>
+                <li><a href="signin.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2>Convert Text to Audio</h2>
+        <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+        <button id="convert-btn" class="button">Convert to Audio</button>
+
+        <div class="audio-output hidden">
+            <audio id="audio-player" controls></audio>
+            <button id="download-btn" class="button">Download Audio</button>
+        </div>
+    </main>
+
+    <script defer src="../scripts/text-to-audio.js"></script>
+    <script defer src="../scripts/navbar.js"></script>
+</body>
+</html>

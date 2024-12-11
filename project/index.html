@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakoza - Home</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../assets/logo.webp" alt="Speakoza Logo">
+                </a>
+            </div>
+            <div class="welcome-message" id="welcome-message"></div>
+            <ul class="nav-links">
+                <li class="signin"><a href="signin.html">Sign In</a></li>
+                <li class="signup"><a href="signup.html">Sign Up</a></li>
+                <li><a href="signin.html" onclick="logout()">Logout</a></li>
+                <li><a href="library.html">My Library</a></li>
+                <li><a href="premium.html">Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <h2>Welcome to Speakoza</h2>
+        <p>Your one-stop solution for AI-powered text-to-speech conversion.</p>
+        <a id="getstart" class="button">Get Started</a>
+    </main>
+
+    <script defer src="../scripts/navbar.js"></script>
+</body>
+
+</html>
